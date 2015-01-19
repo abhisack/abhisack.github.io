@@ -53,9 +53,7 @@
         margin-bottom: 7px;
         display: inline-block;
 
-        &:hover {
-            color: $link-colour-over;
-        }
+       
 
         img { 
             margin-right: 5px; 
@@ -63,6 +61,16 @@
             vertical-align: middle;
         }
     }
+
+    .about-body-link:hover {
+    color: currentColor;
+    }
+
+    .about-body-link:hover > span {
+    color: $link-colour-over;
+    }
+
+
 
     @media only screen and (max-width : 500px) {
         .about-avatar { margin-right: 20px; }
