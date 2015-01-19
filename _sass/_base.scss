@@ -1,0 +1,107 @@
+* { 
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    
+}
+
+body {
+
+    border-top: 7px solid white;
+    
+}
+
+
+@font-face {
+
+  font-family: 'FontAwesome';
+  src: url('/js/fontawesome-webfont.ttf?v=4.0.3');
+
+}
+
+@font-face {
+
+font-family: 'Agency fb'; 
+src: url('js/AGENCYR.TTF');
+
+} 
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://fonts.gstatic.com/s/lato/v11/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+
+
+body {
+    font-family: $regular-font;
+    font-size: $regular-text-size;
+    color: $text-colour;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+::selection {
+    background-color: #e7efe7;
+}
+
+h3,
+h5 {
+  margin: 50px 0 25px;
+}
+
+
+a {
+    color: $link-colour;
+    text-decoration: none;
+     
+
+    &:hover {
+        color: $link-colour-over;
+    }
+}
+
+img {
+
+    -webkit-transition: all 400ms ease-in;
+     -moz-transition: all 400ms ease-in;
+      -ms-transition: all 400ms ease-in;
+      -o-transition: all 400ms ease-in;
+       transition: all 400ms ease-in;
+
+       &:hover{
+       opacity: 0.9;
+       }
+
+}
+
+.post-body img, post .post-body img {
+  
+    width: 100%;
+    height: 65vh;
+}
+
+.post-body h4 {
+  font-size: 20px;
+}
+
+
+.post-body p {
+font-size: 16px;
+font-weight: normal;
+  color: lighten(black, 27%);
+
+}
+.post-body:first-letter {
+  color: #568156;
+  font-weight: 20em;
+  font-size: 30px;
+}
+
+

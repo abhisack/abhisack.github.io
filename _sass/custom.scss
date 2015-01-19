@@ -1,0 +1,209 @@
+.nav-menu {
+	
+	position: absolute;
+	top: 30px;
+	float: right;
+	margin-right: 50px 15px 0 0;
+	width: 50px;
+	
+}
+
+.header i {
+position: absolute;
+top: 50%;
+right: 50px;
+-webkit-transform: translate(0, -50%);
+-ms-transform: translate(0, -50%);
+-o-transform: translate(0, -50%);
+transform: translate(0, -50%);
+
+     display: block;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	border-top: 2px solid #568156;
+	background: url(IMG/gradient-1.png);
+	
+}
+
+.header i:hover {
+
+	cursor: hand;
+
+}
+
+.nav-box {
+	
+position: fixed;
+top: 0;
+left: -1366px;
+width: 100%;
+height: 100%;
+z-index: 2;
+background-image: url(/img/banner.jpg);
+background-blend-mode: multiply;
+overflow-y: auto;
+
+}
+
+
+.nav-box-menu {
+width: 80%;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+
+	margin: 0 auto;
+
+}
+
+.nav-box-menu .fa-times {
+position: absolute;
+	color: white;
+	right: 50px;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+
+}
+
+.nav-box-menu .fa-times:hover {
+cursor: pointer;
+opacity: 0.7;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.nav-box-menu .fa-times:active {
+
+opacity: 0.7;
+}
+.nav-box-menu h2 {
+text-align: center;
+text-transform: uppercase;
+	color: white;
+	font-size: 40px;
+                  font-family: sans-serif;
+	padding: 15px 50px 15px 50px;
+	text-decoration: underline;
+
+}
+
+.nav-box-menu p {
+text-align: center;
+	color: white;
+}
+
+.nav-box-menu .btn-site {
+display: block;
+	text-decoration: none;
+	text-align: center;
+
+	color: white;
+	font-size: 15px;
+	padding: 5px 15px 5px 15px;
+	background: #568156;
+	width: 200px;
+	height: 50px;
+
+line-height: 50px;
+	margin: 15px auto;
+	
+
+}
+.nav-box-menu .btn-site:hover {
+color: white;
+	background: black;
+-webkit-transition: 400ms ease-in-out 200ms;
+-moz-transition: 400ms ease-in-out 200ms;
+-ms-transition: 400ms ease-in-out 200ms;
+-o-transition: 400ms ease-in-out 200ms;
+transition: 400ms ease-in-out 200ms;
+
+
+}
+
+/***********************Code Highlighter *********************/
+
+code::selection {
+
+background-color: white;
+color: #333;
+
+}
+code::-moz-selection {
+
+background-color: white;
+color: #333;
+
+}
+
+code::-o-selection {
+
+background-color: white;
+color: #333;
+
+}
+
+code::-ms-selection {
+
+background-color: white;
+color: #333;
+
+}
+
+pre {
+
+font-size: 17px;
+overflow-x: auto;
+padding: 15px 50px;
+border-left: 7px solid #568156;
+border-radius: 10px;
+
+}
+
+pre code {
+
+padding-left: 50px;
+
+}
+
+/******************Media Queries Start here ***************/
+
+
+@media screen and (max-width: 768px) {
+.nav-box-menu  {
+width: 100%;
+}
+
+.nav-box-menu .fa-times {
+right: 10px;
+top: 10px;
+}
+
+header .fa-bars {
+
+right: 10px;
+
+}
+	
+}
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+
+.nav-box-menu h2 {
+font-size: 30px;
+}
+
+.nav-box-menu .btn-site {
+padding: 5px 10px;
+}
+
+}

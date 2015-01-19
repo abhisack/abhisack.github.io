@@ -1,0 +1,21 @@
+.page-title {
+color: white;
+width: 150px;
+text-align: center;
+font-size: 20px;
+padding: 5px 15px;
+background-color: #568156;
+-webkit-box-shadow: -5px -5px 0 5px black, 0 0 2px black;
+-o-box-shadow: -10px -5px 0 5px black, -11px -6px 5px 5px black, 0 0 2px black;
+-ms-box-shadow: -10px -5px 0 5px black, -11px -6px 5px 5px black, 0 0 2px black;
+box-shadow: -5px -5px 0 5px black, 0 0 2px black;
+}
+
+.post-content p {
+
+	font-size: 16px;
+font-weight: normal;
+  color: lighten(black, 27%);
+  line-height: 27px;
+
+}

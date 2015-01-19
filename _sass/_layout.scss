@@ -1,0 +1,182 @@
+
+
+#ribbon {
+    background-image: url(/img/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrap {
+
+    margin: 525px auto 0;
+    width: 885px;
+
+    // Sticky footer trick, see http://css-tricks.com/snippets/css/sticky-footer/
+    min-height: 100%;
+    margin-bottom: (-1 * $footer-height);
+
+    &:after {
+      content: "";
+      display: block;
+      height: $footer-height;
+    }
+}
+
+@media only screen and (max-width : 900px) {
+    #wrap { width: 90%; }
+}
+
+header {
+position: relative;
+width: 100% !important;
+height: 450px;
+
+background-image: url(/img/banner.jpg);
+background-blend-mode: multiply;
+    transition-property: margin padding;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    margin: 0 0 40px;
+    padding-top: 50px; // 40px margin [has to be padding for sticky footer] + 10px for ribbon [positioned absolutely]
+    padding-bottom: 10px;
+      border-top: 7px solid white;
+    box-shadow: 0 2px 2px black;
+
+    a,
+    a:hover {
+        color: $text-colour
+    }
+}
+
+
+header #title-main {
+font-family: 'Agency fb';
+font-weight: 50em;
+letter-spacing: 15px;
+position: absolute;
+left: 50%;
+top: 40%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+font-size: 10vw;
+color: white;
+text-align: center;
+}
+
+
+header #title-sub {
+position: absolute;
+left: 50%;
+top: 60%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+font-size: 25px;
+font-family: verdana !important;
+color: white;
+text-align: center;
+    
+}
+
+header .fa-bars {
+position: absolute;
+top: 30%;
+right: 50px;
+-webkit-transform: translate(0, -50%);
+-o-transform: translate(0, -50%);
+-ms-transform: translate(0, -50%);
+transform: translate(0, -50%);
+
+     display: block;
+    color: white;
+    padding: 5px 10px;
+    border-top: 2px solid #568156;
+    background: url(IMG/gradient-1.png);
+    
+}
+
+header .fa-bars:hover {
+    cursor: pointer;
+}
+
+header .fa-bars:active {
+    opacity: 0.7;
+}
+
+@media only screen and (max-width : 480px) {
+    header {
+        padding-top: 30px;
+        margin: 0 0 20px;
+    }
+
+    header #title-sub {
+    font-size: 17px;
+    }
+}
+
+
+
+h1 {
+    font-family: $title-font;
+    font-size: $regular-text-size;
+    font-weight: bold;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: $subtitle-font;
+    font-size: $regular-text-size;
+    margin: 0;
+    color: $subtitle-colour;
+    font-weight: normal;
+}
+
+footer {
+
+list-style: none;
+    background-image: url(/img/banner.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: $footer-height;
+    width: 100%;
+    display: table;
+     box-shadow: 0 -2px 2px black;
+}
+footer .about-avatar {
+width: 10vw;
+height: 10vw;
+min-width: 100px;
+min-height: 100px;
+-webkit-transition: .3s ease-in;
+-moz-transition: .3s ease-in;
+-ms-transition: .3s ease-in;
+-o-transition: .3s ease-in;
+transition: .3s ease-in;
+
+}
+
+
+
+footer .about-avatar:hover {
+
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -webkit-filter: saturate(80%);
+
+}
+
+
+
+    /************************DISQUS STYLING *********************************/
+
+    #disqus_thread {
+    margin-bottom: 50px;
+    }
