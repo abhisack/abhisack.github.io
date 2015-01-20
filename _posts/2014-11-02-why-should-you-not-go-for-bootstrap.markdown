@@ -21,4 +21,4 @@ Yes, If you wish to use Bootstrap; believe us you'll not like to sit hours for c
 Although, people call it the most convenient way to create awesome themes (perhaps it is but is limited). You might have seen many Bootstrap themes but Did you notice that they all nearly kook same. At first you'll be very happy with it but later it 'll get boring when you'll see same designs every time.
 
 
-And a lots more...
+And a lots more.
