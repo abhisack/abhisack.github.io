@@ -65,6 +65,17 @@ git push origin master
 
 Note: "origin master" is used here to specify branch name. You could use gh-pages or any other branch depending on your need.
 
+### Switching Between Branches
+
+<pre>
+<code class="language-git">
+
+git check out {branch name}
+</code>
+</pre>
+
+Switches you branch from current to the specified one.
+
 I hope I could help I could help you getting started with GIT. If you still encounter any problem, you're welcomed to share with me below. I'm here to help you with my best. Cheers!
 
 
