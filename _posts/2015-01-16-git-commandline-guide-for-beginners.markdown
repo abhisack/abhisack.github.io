@@ -52,7 +52,7 @@ git push origin master
 </code>
 </pre>
 
-If you make changes to just a single file, you can use its name in place of "--all". For example if you made changes to index.html file of your repo. Use simply this.
+If you make changes to just a single file, you can use its name in place of "- -all". For example if you made changes to index.html file of your repo. Use simply this.
 
 <pre>
 <code class="language-git">
@@ -76,6 +76,6 @@ git check out {branch name}
 
 Switches you branch from current to the specified one.
 
-I hope I could help I could help you getting started with GIT. If you still encounter any problem, you're welcomed to share with me below. I'm here to help you with my best. Cheers!
+I hope I could help you getting started with GIT. If you still encounter any problem, you're welcomed to share with me below. I'm here to help you with my best. Cheers!
 
 
