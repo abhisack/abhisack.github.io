@@ -3,7 +3,7 @@ layout: post
 title:  "Animated Headlines with background-clip"
 date: 2015-01-01 17:39:55
 tags: codepen
-description: "Have you ever wondered seeing the plugins like Addthis on Wordpress that how they really work. Well, today I'm going to share with you a simple plugin powered by jQuery & css which you of course will love to use on your site"
+description: "This year, on its very first day, I was coding something awesome awesome on codepen. Thought should blog about this awesome background-clip property."
 comments: true
 ---
 
