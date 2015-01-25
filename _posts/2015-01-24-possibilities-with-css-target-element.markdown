@@ -7,13 +7,13 @@ description: "A short list of useful git commands to help the beginners get star
 comments: true
 ---
 
-Target pseudo element isn't just what it sounds like. You'd be amazes to get to know it's powers and what It can do. I've recently been hanging around codepen building some stuff with this super hacky element and it made my week. Actually my passion for hacking with target element grew after [Sara](https://twitter.com/SaraSoueidan) wrote an article [here](http://blogs.adobe.com/dreamweaver/2015/01/using-the-css-target-selector-to-create-javascript-less-ui-effects.html).
+Target pseudo element isn't just what it sounds like. You'd be amazed to get to know it's powers and what It can do. I've recently been hanging around codepen building some stuff with this super hacky element and it made my week. Actually my passion for hacking with target element grew after [Sara](https://twitter.com/SaraSoueidan) wrote an article [here](http://blogs.adobe.com/dreamweaver/2015/01/using-the-css-target-selector-to-create-javascript-less-ui-effects.html).
 Target enables you to go js-less to lessen burden on your webpages for good performences.
 I'm taking two theories here to explain how target element can be useful.
 
 1. "The goal is to have two apperences of a same element, first it's default apperence that's visible after the page loads and the other when the element is targeted(kinda awakened)"
 
-2. "Traget is smart in awekening a sleeping element"
+2. "Traget is smart at awekening a sleeping element"
 
 These theories might have explained you a lot of what I'm trying to tell you. But you might question, how to target any element? It's simple. Give that element an unique ID and then call or aweken this ID through any anchor element.
 
