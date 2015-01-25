@@ -3,7 +3,7 @@ layout: post
 title:  "Possibilities With CSS Target Pseudo Element"
 date: 2015-01-24 17:39:55
 tags: CSS
-description: "A short list of useful git commands to help the beginners get started with GIT and Github."
+description: "A look at how powerful css' pseudo element target can be and how it can help you go js-less for littile user interactions like popping up a lightbox, show/hide nav bar etc."
 comments: true
 ---
 
