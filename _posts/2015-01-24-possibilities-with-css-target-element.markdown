@@ -7,8 +7,8 @@ description: "A look at how powerful css' pseudo element target can be and how i
 comments: true
 ---
 
-Target pseudo element isn't just what it sounds like. You'd be amazed to get to know it's powers and what It can do. I've recently been hanging around codepen building some stuff with this super hacky element and it made my week. Actually my passion for hacking with target element grew after [Sara](https://twitter.com/SaraSoueidan) wrote an article [here](http://blogs.adobe.com/dreamweaver/2015/01/using-the-css-target-selector-to-create-javascript-less-ui-effects.html).
-Target enables you to go js-less to lessen burden on your webpages for good performences.
+Target pseudo [element](http://dev.w3.org/csswg/selectors-4/#the-target-pseudo) isn't just what it sounds like. You'd be amazed to get to know it's powers and what It can do. I've recently been hanging around codepen building some stuff with this super hacky element and it made my week. Actually my passion for hacking with target element grew after [Sara](https://twitter.com/SaraSoueidan) wrote an article [here](http://blogs.adobe.com/dreamweaver/2015/01/using-the-css-target-selector-to-create-javascript-less-ui-effects.html).
+Target enables you go js-less to lessen burden on your webpages for good performence. With it basic user interactions can be created very easily.
 I'm taking two theories here to explain how target element can be useful.
 
 1. "The goal is to have two apperences of a same element, first it's default apperence that's visible after the page loads and the other when the element is targeted(kinda awakened)"
@@ -17,7 +17,7 @@ I'm taking two theories here to explain how target element can be useful.
 
 These theories might have explained you a lot of what I'm trying to tell you. But you might question, how to target any element? It's simple. Give that element an unique ID and then call or aweken this ID through any anchor element.
 
-Supoose if we have a div with ID #nav having following CSS-
+Suppose if we have a div with ID #nav having following CSS-
 
 <pre>
 <code class="language-css">
@@ -71,7 +71,7 @@ There're many awesome things you can create using target element, especially sho
 
 ###Popup Blocks
 
-Yeah! you don't need to burden your webpages with jquery's animations and fadeIns/fadeOuts to bring in the search block when user clicks any search icon/button on your site. Stick to pure CSS for the same.
+Yeah! you don't need to burden your webpages with jquery's animations and fadeIns/fadeOuts to pop up a block when user clicks any icon/button on your site. Stick to pure CSS for the same.
 
 Here's a search popup's demo I created being inspired by Sara Soueidan's article.
 
@@ -87,12 +87,12 @@ Target element can be super useful in creating awesome ux search inputs like the
 <p data-height="268" data-theme-id="0" data-slug-hash="MYoELr" data-default-tab="result" data-user="abhisack" class='codepen'>See the Pen <a href='http://codepen.io/abhisack/pen/MYoELr/'>CSS-Only Search Toggle with Target element</a> by Abhishek Sachan (<a href='http://codepen.io/abhisack'>@abhisack</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-In these two demos the theories listed at the beginning of the post are applied. Note how we come out of the targeted element (clicking close buttons) by putting a second anchor element linking to '#'.
+In these two demos the theories listed at the beginning of the post are applied. Note how we come out of the targeted element (clicking close buttons) by putting a second anchor element linking to '#' which is technically the url of your current page.
 
 And a lots more you can imagine.
 
 ####Going Further
-If you want to explore more about awesome things you can do with target pseudo element and escape needless JS, I recommend you reading [this post](http://css-tricks.com/tour-performant-responsive-css-site/) by Rajoshi Ghosh and [Tanmai Gopal](http://codepen.io/tanmaig). Also don't miss Sara's [article](http://blogs.adobe.com/dreamweaver/2015/01/using-the-css-target-selector-to-create-javascript-less-ui-effects.html) if you haven't read it already.
+If you want to explore more about awesome things you can do with target pseudo element and escape needless JS, I recommend you reading "Animate the scroll with only CSS" section of [this post](http://css-tricks.com/tour-performant-responsive-css-site/) by Rajoshi Ghosh and [Tanmai Gopal](http://codepen.io/tanmaig). Also don't miss Sara's [article](http://blogs.adobe.com/dreamweaver/2015/01/using-the-css-target-selector-to-create-javascript-less-ui-effects.html) if you haven't read it already.
 Created something awesome with target? Yes? Awesome!! I'm waiting for your demo.
 
 
