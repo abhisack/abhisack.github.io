@@ -70,7 +70,7 @@ But why to increase burden on your webpage until you can do the same with just p
 ###So What Are the Possibilities?
 There're many awesome things you can create using target element, especially show/hide things. Like-
 
-###Popup Blockss
+###Popup Blocks
 Yeah! you don't need to burden your webpages with jquery's animations and fadeIns/fadeOuts to pop up a block when user clicks any icon/button on your site. Stick to pure CSS for the same.
 Here's a search popup's demo I created being inspired by Sara Soueidan's article.
 
