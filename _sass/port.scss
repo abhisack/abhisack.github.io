@@ -5,7 +5,7 @@ width: 99%;
 margin-top: 20px;
 margin-left: auto;
 margin-right: auto;
-font-family: sans-serif;
+font-family: "Open Sans";
 
 display: -webkit-flex;
 display: -moz-block;
@@ -37,6 +37,7 @@ align-items: center;
 -ms-prespective: 1000px;
 -webkit-prespective: 1000px;
 -o-prespective: 1000px;
+overflow-y: hidden !important;
 
 }
 
@@ -48,12 +49,11 @@ height: 175px;
 line-height: 175px;
 text-align: center;
 margin: 25px 0 0 5px;
-border: 2px solid #568156;
-background-color: #568156;
+background-color: lighten(#333, 10%);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-background-blend-mode: multiply;
+background-blend-mode: overlay;
 -moz-background-blend-mode: multiply;
 -webkit-transition: all 1s ease-in-out;
 -moz-transition: all 1s ease-in-out;
@@ -63,35 +63,28 @@ transition: all 1s ease-in-out;
 will-change: background-blend-mode;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
+-ms-box-sizing: border-box;
 flex: 1;
-
-
+box-shadow: inset 0 0 2px #333;
 }
+
 #sites p {
-position: relative;
-top: 0;
 padding: 0;
 margin: 0;
-font-family: sans-serif;
+font-family: "Open Sans";
 color: white;
 font-size: 20px;
 font-weight: 20em;
 opacity: 0;
-background: url(/img/gradient-2.png);
+background: rgba(black,0.2);
 will-change: display;
 height: 100%;
 vertical-align: middle;
 line-height: 87.5px;
 
-/**************Fallback*************/
-position: relative;
-left: 50%;
-top: 50%;
--webkit-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
--webkit-transform-origin: center center;
--o-transform-origin: center center;
--ms-transform-origin: center center;
+/****prevent scrollbar****/
+
+overflow: hidden !important;
 
 
 }
@@ -102,8 +95,8 @@ margin: -500px auto 0 auto;
 display: block;
 width: 70%;
 text-align: center;
-margin-top: 0px;
-font-family: verdana;
+margin-top: 0;
+font-family: "Open Sans";
 font-size: 15px;
 color: white;
 }
@@ -286,7 +279,8 @@ color: white;
 #sites:nth-child(1) {
 
 
-background-image: url(/img/port/Screenshot_4.jpg);
+background-image: url(/img/uxy.jpg);
+background-size: 100% 100%;
 -webkit-flex-basis: 100%;
 -moz-flex-basis: 100%;
 -ms-flex-basis: 100%;
@@ -302,19 +296,19 @@ line-height: 25vh !important;
 
 #sites:nth-child(2) {
 
-background-image: url(/img/port/code-feed.jpg);
+background-image: url(/img/code-feed.jpg);
 
 }
 
 #sites:nth-child(3) {
 
-background-image: url(/img/port/traffic_lights.jpg);
+background-image: url(/img/tooler.jpg);
 
 }
 
 #sites:nth-child(4) {
 
-background-image: url(/img/port/Screenshot_5.jpg);
+background-image: url(/img/social.jpg);
 
 }
 
@@ -323,6 +317,38 @@ background-image: url(/img/port/Screenshot_5.jpg);
 background-image: url(/img/port/fl1.jpg);
 
 }
+
+
+/****"Hire Me" Button Styling*************/
+
+.port-btn {
+    display: block;
+    line-height: 75px;
+	width: 100% !important;
+	margin: 50px auto 0 auto;
+	height: 75px !important;
+	background-color: #333 !important;
+	color: white !important;
+	text-align: center;
+	font-size: 25px;
+	-webkit-transition: all 350ms ease-in;
+	-moz-transition: all 350ms ease-in;
+	-ms-transition: all 350ms ease-in;
+	-o-transition: all 350ms ease-in;
+	transition: all 350ms ease-in;
+	border-radius: 5px 5px 0 0;
+    text-decoration: none !important;
+
+}
+
+.port-btn:hover {
+background-color: lighten(#333, 15%) !important;
+background-color: tomato !important;
+}
+
+
+
+
 
 @media screen and (max-width: 768px) {
 #sites {
@@ -338,16 +364,28 @@ flex-basis: 100%;
 
 #sites p{
 
+    font-size: 18px;
 	opacity: 1;
 }
 
+#sites p span{
 
+    font-size: 13px;
+	opacity: 1;
 }
+  }
+
+
 
 @media screen and (max-width: 1080px) {
 
 #sites p {
 	font-size: 20px;
 }
-
 }
+
+
+
+
+
+

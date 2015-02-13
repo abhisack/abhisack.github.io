@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
   {% include head.html %}
-    <body>
-      <div id="ribbon">  {% include header.html %}</div>
-      <div id="wrap" class="wrap">
-      
+
+  <body>
+
+  <div class="overlay"></div>
+  
+  {% include nav.html %}
+
+  {% include search.html %}
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
         {{ content }}
       </div>
-      {% include footer.html %}
-      <script type="text/javascript" src="{{ site.baseurl }}/js/travelog.js"></script>
-      <script type="text/javascript" src="{{ site.baseurl }}/js/prism.js"></script>
-    </body>
+      {% include disqus.html  %}
+    </div>
+
+
+    {% include footer.html %}
+
+
+    <script type="text/javascript">
+      SimpleJekyllSearch.init({
+        searchInput: document.getElementById('query'),
+        resultsContainer: document.getElementById('results'),
+        dataSource: '{{ site.baseurl }}/search.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        noResultsText: '<h2>Sorry Buddy!</h2>',
+        limit: 10,
+        fuzzy: false,
+      })
+    </script>
+
+
+  </body>
+
 </html>

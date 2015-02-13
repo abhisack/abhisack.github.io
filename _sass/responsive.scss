@@ -1,0 +1,95 @@
+@media screen and (max-width: 768px) {
+	
+
+	.logo span:not(:first-child) {
+
+	margin-left: -5px;
+	}
+
+	.btn {
+	margin: 0;
+	}
+
+	#nav {
+	width: 100%;
+	}
+
+	#nav ul li a {
+	padding: 10px 0;
+	}
+
+	.post-list {
+width: 80%;
+margin: 0 auto;
+}
+
+.post-link {
+	font-size: 20px;
+}
+
+.post-title {
+	font-size: 25px;
+}
+
+.post-description {
+	font-size: 13px;
+}
+.page-content {
+width: 95%;
+margin-left: -35px;
+}
+
+.page-content p {
+	font-size: 14px;
+}
+
+#disqus_thread {
+	margin-left: 45px !important;
+}
+
+#nav img {
+	margin: 10px auto;
+}
+
+ 
+  
+  #nav .social-icons a {
+
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  }
+
+  #nav ul {
+  margin-top: 20px;
+  }
+
+
+	.pagination {
+width: 100%;
+}
+	
+.pagination a, 
+.pagination span,
+.pagination em {
+	text-align: center;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	margin-right: 0;
+	}
+
+	.overlay {
+	display: none;
+	}
+
+}
+
+@media screen and (min-width: 769px) {
+	
+	#disqus_thread {
+ 
+   padding: $spacing-unit 30px;
+}
+
+}

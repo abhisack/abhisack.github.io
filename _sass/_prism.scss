@@ -105,3 +105,19 @@ color: #f92672;
 .token.entity {
 	cursor: help;
 }
+
+
+/********Box Styling*****************/
+
+pre {
+	border-left: 7px solid tomato;
+	border-radius: 0 5px 5px 0;
+	background-image: repeating-linear-gradient(-45deg, #ddd 0, #ddd 25%, white 0, white 55%);
+	background-size: 6px;
+}
+
+
+code {
+	
+	padding-left: 10px;
+}

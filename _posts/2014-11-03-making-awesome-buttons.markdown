@@ -185,5 +185,4 @@ git clone https://gituhub.com/abhisack/awesome-follow-buttons.git
 </code>
 </pre>
 
-<p class="btn-p"><a id="btn" href="#">{% include icons/down.html %}</a></p>
 

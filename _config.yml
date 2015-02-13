@@ -2,7 +2,7 @@
 title: Abhishek Sachan
 subtitle: "Front-end Geek"
 email: iamabhishekfromindia@gmail.com
-description: "Abhishek Sachan is a front-end Web Developer from India"
+description: "Abhishek Sachan is a front-end Web Developer, gamer from India"
 baseurl: ""
 url: "http://abhisheksachan.in"
 twitter_username: "AbhishekSachan3"
@@ -13,8 +13,9 @@ instagram_username: "abhisack"
 markdown: kramdown
 permalink: pretty
 
-# Pagination
+#paginator
 paginate: 5
+paginate_path: "/page:num/"
 
 # Sass
 sass:

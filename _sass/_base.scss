@@ -1,107 +1,266 @@
-* { 
-    box-sizing: border-box;
+/**
+ * Reset some basic elements
+ */
+
+ * {
+ overflow-x: hidden;
+ }
+
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
 }
 
-html,
+
+
+/**
+ * Basic styling
+ */
 body {
-    width: 100%;
-    height: 100%;
-    
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $text-color;
+    background-color: $background-color;
 }
-
-body {
-
-    border-top: 7px solid white;
-    
-}
-
-
-@font-face {
-
-  font-family: 'FontAwesome';
-  src: url('/js/fontawesome-webfont.ttf?v=4.0.3');
-
-}
-
-@font-face {
-
-font-family: 'Agency fb'; 
-src: url('js/AGENCYR.TTF');
-
-} 
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: url(http://fonts.gstatic.com/s/lato/v11/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
-}
-
-
-body {
-    font-family: $regular-font;
-    font-size: $regular-text-size;
-    color: $text-colour;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-}
+s
 
 ::selection {
     background-color: #e7efe7;
+    }
+
+   
+
+    @font-face {
+
+  font-family: 'FontAwesome';
+  src: url('/css/fonts/fontawesome-webfont.ttf?v=4.0.3');
+
 }
 
-h3,
-h5 {
-  margin: 50px 0 25px;
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxh_xHqYgAV9Bl_ZQbYUxnQU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxn5HxGBcBvicCpTp6spHfNo.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxjqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
 }
 
 
-a {
-    color: $link-colour;
-    text-decoration: none;
-     
+/**
+ * Set `margin-bottom` to maintain vertycal rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
 
-    &:hover {
-        color: $link-colour-over;
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
     }
 }
 
-img {
 
-    -webkit-transition: all 400ms ease-in;
-     -moz-transition: all 400ms ease-in;
-      -ms-transition: all 400ms ease-in;
-      -o-transition: all 400ms ease-in;
-       transition: all 400ms ease-in;
 
-       &:hover{
-       opacity: 0.9;
-       }
-
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
 }
 
-.post-body img, post .post-body img {
-  
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover:not(.site-title) {
+
+        color: $text-color;
+        color: tomato;
+        text-decoration: underline;
+    }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
     width: 100%;
-    height: 65vh;
-}
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
 
-.post-body h4 {
-  font-size: 20px;
-}
-
-
-.post-body p {
-font-size: 16px;
-font-weight: normal;
-  color: lighten(black, 27%);
-
-}
-.post-body:first-letter {
-  color: #568156;
-  font-weight: 20em;
-  font-size: 30px;
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(800px - (#{$spacing-unit}));
+        max-width:         calc(800px - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
 }
 
 
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}

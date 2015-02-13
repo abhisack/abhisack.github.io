@@ -1,188 +1,521 @@
-
-
-#ribbon {
-    background-image: url(/img/banner.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+body {
+    overflow-x: hidden !important;
 }
 
-.wrap {
-
-    margin: 525px auto 0;
-    width: 885px;
-
-    // Sticky footer trick, see http://css-tricks.com/snippets/css/sticky-footer/
-    min-height: 100%;
-    margin-bottom: (-1 * $footer-height);
-
-    &:after {
-      content: "";
-      display: block;
-      height: $footer-height;
-    }
+* {
+    overflow-x: hidden;
 }
 
-@media only screen and (max-width : 900px) {
-    #wrap { width: 90%; }
+pre {
+	
+	margin: 0 50px;
+}
+
+.highlight {
+  font-weight: 400;
+}
+
+/**
+ * Site header
+ */
+
+
+.logo {
+	vertical-align: middle;
+  height: 75px;
+  line-height: 75px;
+}
+
+.logo span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  color: white !important;
+  border-radius: 50%;
+  border: 2px solid tomato;
+  text-shadow: 0 0 1px tomato;
+  -webkit-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.logo span:nth-child(2) {
+  border-color: lighten(tomato, 7%);
+}
+.logo span:nth-child(3) {
+  border-color: lighten(tomato, 10%);
+}
+.logo span:nth-child(4) {
+  border-color: lighten(tomato, 15%);
+}
+
+.logo:hover span {
+  border-color: tomato;
 }
 
 
-header {
+
+.btn {
+float: right;
+margin: 0 30px 0 0;
+  text-decoration: none;
+  color: white !important;
+  font-size: 25px !important;
+  background-color: #333;
+  width: 100px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  box-shadow: inset 10px 3px 0 -3px white,-2px 0 5px #333;
+  -webkit-transition: background-color .3s ease-in;
+  -moz-transition: background-color .3s ease-in;
+  -ms-transition: background-color .3s ease-in;
+  -o-transition: background-color .3s ease-in;
+  transition: background-color .3s ease-in;
+  overflow-y: hidden;
+}
+ss
+.btn span {
+color: white !important;
+font-size: 25px !important;
+*font-size: 5px !important;
+	vertical-align: middle;
+}
+
+.btn:hover {
+     text-decoration: none !important;
+     background-color: lighten(#333, 15%);
+
+}
+
+
+
+
+
+#nav {
+  position: fixed;
+  top: 0;
+  right: -1366px;
+  width: 30vw;
+  height: 100vh;
+  background-color: #333;
+  box-sizing: border-box;
+  box-shadow: inset 10px 3px 0 -3px tomato, inset 15px 3px 0 -3px #ff8e7a;
+
+  /**********Easing for shifting with target
+
+  -webkit-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+   *******/
+  z-index: 10;
+}
+
+#nav img {
+display: block;
+    width: 12vw;
+    height: 12vw;
+    min-width: 110px;
+    min-height: 110px;
+    max-width: 150px;
+    max-height: 150px;
+    border: 7px solid white;
+    margin: 50px auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 25% 50%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+}
+
+#nav ul {
+    margin-top: -20px;
+    padding: 0;
+    list-style: none;
+}
+
+#nav {
+  right: -1366px;
+  opacity: 0;
+}
+
+/****************Comment out to make it work
+
+#nav:target {
+  right: 0;
+  opacity: 1;
+}
+
+******/
+
+#nav li a {
+  display: block;
+  margin: 1px auto;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333 !important;
+  font-weight: 500;
+  background: white;
+}
+
+#nav li a:hover {
+text-decoration: none;
+color: white !important;
+  background-color: #994b3d;
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+
+#nav .social-icons {
+	display: webkit-flex;
+  display: moz-block;
+	display: flex;
+	-webkit-justify-content: space-around;
+  -moz-justify-content: center;
+	justify-content: center;
+  -moz-align-contents: center;
+  align-contents: center;
+  -wekit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  width: 80%;
+
+  /*************Firefox Fallback****************/
 position: relative;
-width: 100% !important;
-height: 450px;
-background-color: #568156;
-background-image: url(/img/banner.jpg);
-background-blend-mode: none;
-    transition-property: margin padding;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    margin: 0 0 40px;
-    padding-top: 50px; // 40px margin [has to be padding for sticky footer] + 10px for ribbon [positioned absolutely]
-    padding-bottom: 10px;
-      border-top: 7px solid white;
-    box-shadow: 0 2px 2px black;
-
-    a,
-    a:hover {
-        color: $text-colour
-    }
-}
-
-
-header #title-main {
-font-family: 'Agency fb';
-font-weight: 50em;
-letter-spacing: 15px;
-position: absolute;
 left: 50%;
-top: 40%;
--webkit-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-font-size: 10vw;
-color: white;
-text-align: center;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+transform: translateX(-50%);
+  }
+
+#nav .social-icons a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #333;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	margin-left: 10px;
+	background-color: lighten(white, 50%);
+	opacity: 0.9;
+	text-align: center;
+	vertical-align: middle;
+	box-sizing: border-box;
+	overflow: hidden;
+	border: 2px solid transparent;
 }
 
-
-header #title-sub {
-position: absolute;
-left: 50%;
-top: 60%;
--webkit-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-font-size: 25px;
-font-family: verdana !important;
-color: white;
-text-align: center;
-    
-}
-
-header .fa-bars {
-position: absolute;
-top: 30%;
-right: 50px;
--webkit-transform: translate(0, -50%);
--o-transform: translate(0, -50%);
--ms-transform: translate(0, -50%);
-transform: translate(0, -50%);
-     display: block;
-    color: white;
-    padding: 5px 10px;
-    border-top: 2px solid #568156;
-    background-color: lighten(#568156, 10%);
-
-    
-}
-
-header .fa-bars:hover {
-    cursor: pointer;
-}
-
-header .fa-bars:active {
-    opacity: 0.7;
-}
-
-@media only screen and (max-width : 480px) {
-    header {
-        padding-top: 30px;
-        margin: 0 0 20px;
-    }
-
-    header #title-sub {
-    font-size: 17px;
-    }
-
-     header #title-main {
-     margin-top: 25px;
-    font-size: 45px;
-    }
+#nav .social-icons a:hover {
+	opacity: 1;
+	color: mix(tomato, #333);
 }
 
 
 
-h1 {
-    font-family: $title-font;
-    font-size: $regular-text-size;
-    font-weight: bold;
-    margin: 0 0 5px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 
-h2 {
-    font-family: $subtitle-font;
-    font-size: $regular-text-size;
-    margin: 0;
-    color: $subtitle-colour;
-    font-weight: normal;
-}
+.site-header {
 
-footer {
+    font-family: sans-serif;
+    height: 75px;
+    border-top: 1px solid white;
+    border-bottom: 7px solid white;
 
-list-style: none;
-    background-image: url(/img/banner.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-size: cover;
-    height: $footer-height;
+    // Positioning context for the mobile navigation icon
+    position: relative;
+    top: 0;
     width: 100%;
-    display: table;
-     box-shadow: 0 -2px 2px black;
-}
-footer .about-avatar {
-width: 10vw;
-height: 10vw;
-min-width: 100px;
-min-height: 100px;
--webkit-transition: .3s ease-in;
--moz-transition: .3s ease-in;
--ms-transition: .3s ease-in;
--o-transition: .3s ease-in;
-transition: .3s ease-in;
+    background-color: #333;
+    z-index: 7;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    box-shadow: 3px -5px 0 -3px white, 3px 5px 5px -3px #333;
+    overflow: hidden;
 
 }
 
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    vertical-align: middle;
 
-
-footer .about-avatar:hover {
-
-    -webkit-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    transform: rotate(15deg);
-    -webkit-filter: saturate(80%);
-
-}
-
-
-
-    /************************DISQUS STYLING *********************************/
-
-    #disqus_thread {
-    margin-bottom: 50px;
+    &,
+    &:visited {
+        color: $grey-color-dark;
     }
+}
+
+
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+font-family: sans-serif;
+color: white !important;
+background-color: darken(white, 2%);
+    border-top: 5px solid lighten(#333, 18%);
+    box-shadow: inset 60vw 3vw 0 -3vw #333, inset -70vw 3vw 0 -3vw lighten(#333, 35%);
+    padding: $spacing-unit 0;
+}
+
+.site-footer .wrapper p,,
+.site-footer .wrapper p a {
+    color: white;
+    text-align: center;
+
+}
+
+.site-footer .wrapper p a:hover {
+  color: tomato;
+}
+
+/**
+ * Page content
+ */
+.page-content {
+width: 65%;
+margin: 50px auto;
+    padding: $spacing-unit 30px;
+}
+
+.page-heading {
+    font-weight: 400;
+    font-size: 25px;
+    color: #333;
+}
+
+.post-list {
+width: 80%;
+
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+        border-bottom: 1px solid lighten(black, 80%);
+        &::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: 0;
+        padding: 20px 50px;
+        width: 0;
+        border-bottom: 5px solid tomato;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover::after {
+    border-bottom-color: mix(#333, tomato);
+    width: 85%;
+    }
+    }
+
+    
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: tomato;
+   font-style: bold;
+}
+
+.post-link {
+    font-size: 24px;
+    font-weight: 400 !important;
+    color: #333 !important;
+}
+
+.post-link:hover {
+  color: mix(#333, tomato)!important;
+  text-decoration: none !important;
+} 
+
+
+
+
+/****Pagination***************/
+
+.pagination {
+font-family: sans-serif;
+width: 80%;
+padding: 20px 27px;
+}
+
+.pagination a, 
+.pagination span,
+.pagination em {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+	line-height: 35px;
+    background-color: lighten(#333, 85%);
+    border-radius: 50%;
+    box-shadow: 0 0 2px mix(#333, tomato);
+    margin-right: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pagination a:hover {
+overflow: hidden;
+color: white;
+background-color: mix(#333, tomato);
+border: 1px solid #333;
+text-decoration: none;
+
+
+}
+
+
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+	width: 100%;
+	height: 100%;
+ visibility: hidden;
+ z-index: 9;
+	background-color: black;
+	opacity: 0.5;
+
+}
+
+/****About*******/
+
+.about-pic {
+  width: 300px;
+   height: 300px; 
+   min-width: 300px;
+   min-height: 300px;
+   float: left;
+   object-fit: cover;
+   margin: 0 15px 0 0;
+   
+}
+
+
+
+@media screen and (max-width: 1080px) {
+  
+  .about-pic {
+ float: none;
+ display: block;
+  margin: 0 auto 50px;
+}
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+.about-pic {
+ width: 80%;
+}
+
+}
+
+
+
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 1.5;
+    overflow: hidden;
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+	overflow-y: hidden;
+}
+
+h3 {
+  padding: 15px 0;
+  font-weight: 500;
+}
+
+.post-content {
+font-size: 15px;
+font-family: "Open Sans";
+font-weight: 400;
+    margin-bottom: $spacing-unit;
+    line-height: 1.4em;
+    color: lighten(#333, 2%);
+    padding-bottom: 15px;
+    border-bottom: 5px solid #e7efe7;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+
+    }
+}

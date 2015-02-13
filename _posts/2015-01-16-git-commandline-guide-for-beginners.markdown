@@ -52,6 +52,7 @@ git push origin master
 </code>
 </pre>
 
+
 If you make changes to just a single file, you can use its name in place of "- -all". For example if you made changes to index.html file of your repo. Use simply this.
 
 <pre>
