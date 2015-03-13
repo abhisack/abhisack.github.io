@@ -90,7 +90,7 @@ In these two demos the theories listed at the beginning of the post are applied.
 And a lots more you can imagine.
 
 ###Going Further
-If you want to explore more about awesome things you can do with target pseudo element and escape needless JS, I recommend you reading "Animate the scroll with only CSS" section of [this post](http://css-tricks.com/tour-performant-responsive-css-site/) by Rajoshi Ghosh and [Tanmai Gopal](http://codepen.io/tanmaig). Also don't miss Sara's [article](http://blogs.adobe.com/dreamweaver/2015/01/using-the-css-target-selector-to-create-javascript-less-ui-effects.html) if you haven't read it already.
+If you want to explore more about awesome things you can do with target pseudo element and escape needless JS, I recommend you reading "Animate the scroll with only CSS" section of [this post](http://css-tricks.com/tour-performant-responsive-css-site/) by Rajoshi Ghosh and [Tanmai Gopal](http://codepen.io/tanmaig). Also don't miss Sara's [article](http://blogs.adobe.com/dreamweaver/2015/01/using-the-css-target-selector-to-create-javascript-less-ui-effects.html) if you haven't read it already. Plus, I made a collection of demos featuring such techniques to create awesome UX effects. [Check it out](http://codepen.io/collection/ABNaPw).
 Created something awesome with target? Yes? Awesome!! I'm waiting for your demo.
 
 
