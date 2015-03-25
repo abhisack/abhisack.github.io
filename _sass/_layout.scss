@@ -6,9 +6,21 @@ body {
     overflow-x: hidden;
 }
 
+
 pre {
 	
-	margin: 0 50px;
+	margin: 40px 0 !important;
+}
+
+i {
+
+  background: #e7efe7;
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 5px;
+  border-radius: 2px;
 }
 
 .highlight {
@@ -173,6 +185,7 @@ display: block;
   color: #333 !important;
   font-weight: 500;
   background: white;
+  
 }
 
 #nav li a:hover {
@@ -489,9 +502,9 @@ font-size: 15px;
 font-family: "Open Sans";
 font-weight: 400;
     margin-bottom: $spacing-unit;
-    line-height: 1.4em;
+    line-height: 1.5;
     color: lighten(#333, 2%);
-    padding-bottom: 15px;
+    padding-bottom: $spacing-unit;
     border-bottom: 5px solid #e7efe7;
 
     h2 {
