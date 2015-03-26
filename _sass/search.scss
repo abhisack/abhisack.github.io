@@ -66,7 +66,8 @@ box-sizing: border-box;
 
 
 
-.close {
+.close-search {
+    display: block;
 	float: right;
 	margin: 0;
 	text-decoration: none !important;
@@ -75,7 +76,7 @@ box-sizing: border-box;
 	padding: 10px 20px;
 }
 
-.close:hover {
+.close-search:hover {
 	background: tomato;
 }
 
