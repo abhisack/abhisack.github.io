@@ -5,6 +5,7 @@ date: 2015-03-21 03:55:35
 permalink: "/redirecting-jekyll-posts"
 tags: CSS
 description: "A short tip on redirecting your jekyll posts to other sites."
+featured-image: "https://camo.githubusercontent.com/f05a628923caae27bc6ecab8519dcae40427095b/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3233373938352f323139393236322f62663563306162362d393864322d313165332d386265382d3637383230383235333965652e6a7067"
 comments: true
 ---
 
