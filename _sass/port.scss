@@ -54,13 +54,11 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 background-blend-mode: overlay;
--moz-background-blend-mode: multiply;
 -webkit-transition: all 1s ease-in-out;
 -moz-transition: all 1s ease-in-out;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-will-change: background-blend-mode;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
 -ms-box-sizing: border-box;
@@ -81,6 +79,7 @@ will-change: display;
 height: 100%;
 vertical-align: middle;
 line-height: 87.5px;
+-webkit-transition: all 400ms ease-out;
 
 /****prevent scrollbar****/
 
@@ -106,162 +105,11 @@ color: white;
 	color: white;
 }
 
-@-webkit-keyframes fallIt {
-	
-	from {
-
-	-webkit-transform: scale(0);
-	
-
-
-	}
-	to {
-
-
--webkit-transform: scale(1);
-	
-	
-
-	}
-}
-
-@-moz-keyframes fallIt {
-	
-	from {
-
-	transform: scale(0);
-	
-
-
-	}
-	to {
-
-
-  stransform: scale(1);
-	
-	
-
-	}
-}
-
-@-ms-keyframes fallIt {
-	
-	from {
-
-	-ms-transform: scale(0);
-	
-
-
-	}
-	to {
-
-
--ms-transform: scale(1);
-	
-	
-
-	}
-}
-
-@-o-keyframes fallIt {
-	
-	from {
-
-	-o-transform: scale(0);
-	
-
-
-	}
-	to {
-
-
--o-transform: scale(1);
-	
-	
-
-	}
-}
-
-@keyframes fallIt {
-	
-	from {
-
-	transform: scale(0);
-	}
-
-	to {
-
- transform: scale(1);
-	
-
-	}
-}
-
-
 #sites:hover {
-background-blend-mode: none;
 cursor: pointer;
 opacity: 0.9;
 }
 
-@-webkit-keyframes fadeIn {
-from {
-opacity: 0;
-}
-
-to {
-opacity: 1;
-}
-
-}
-
-
-@-ms-keyframes fadeIn {
-from {
-opacity: 0;
-}
-
-to {
-opacity: 1;
-}
-
-}
-
-
-@-moz-keyframes fadeIn {
-from {
-opacity: 0;
-}
-
-to {
-opacity: 1;
-}
-
-}
-
-
-@-o-keyframes fadeIn {
-from {
-opacity: 0;
-}
-
-to {
-opacity: 1;
-}
-
-}
-
-
-@keyframes fadeIn {
-from {
-opacity: 0;
-}
-
-to {
-opacity: 1;
-}
-
-}
 
 #sites:hover > p {
 
@@ -279,7 +127,7 @@ color: white;
 #sites:nth-child(1) {
 
 
-background-image: url(/img/tab-mockup.jpg);
+background-image: url(/img/web_learner.jpg);
 background-size: 100% 100%;
 -webkit-flex-basis: 100%;
 -moz-flex-basis: 100%;
@@ -302,7 +150,7 @@ background-image: url(/img/code-feed.jpg);
 
 #sites:nth-child(3) {
 
-background-image: url(/img/tooler.jpg);
+background-image: url(/img/tab-mockup.jpg);
 
 }
 
