@@ -8,8 +8,5 @@ Hi there! I'm Abhishek Sachan, 16 years old Front-end Developer and Designer fro
 
 My mentors of Web Industry are Sara, Chris Coyeir, Brad Frost, Lea Veroue, Anna Debenham and everyone whose blogs I read.
 
-####The Other Side
-Having a gaming background, let me tell you, I'm very fictional, virtual kinda of person. After getting free from work and school work I'm either watching movies, playing game, reading books or writing one. I've a very big hope of becoming a contributer, human of quality and values. In future, while working as a front-end Web Developer, I'd like to be a social worker too.
-
 ###About Site
 This site is currently built on Jekyll which previously was built on Wordpress.
