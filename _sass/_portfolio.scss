@@ -1,0 +1,140 @@
+.project-container {
+    
+    padding: 0;
+    margin: 0 0 30px;
+    
+    a {
+        text-decoration: none;
+        color: $text-color !important;
+        
+        &:hover {
+            color: $text-color !important;
+            border: none !important;
+            opacity: 1 !important;
+        }
+    }
+    
+    .project {
+        display: inline-block;
+        width: 45%;
+         border-image: repeating-linear-gradient(to right, #299 0, #299 33%, lighten(#299, 20%) 34%, lighten(#299, 20%) 65%, lighten(#299, 50%) 66%, lighten(#299, 50%) 100%) 7 0 0 0;
+        border-top-width: 7px;
+        vertical-align: top;
+        -webkit-transition: all 400ms ease-out;
+        -moz-transition: all 400ms ease-out;
+        -ms-transition: all 400ms ease-out;
+        -o-transition: all 400ms ease-out;
+        transition: all 400ms ease-out;
+        
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        
+        &:active {
+            -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+        
+        figure {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            height: 40vh;
+            margin: 0;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+            
+            figcaption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgba(white, 0);
+            }
+        }
+        
+        section {
+            display: block;
+            margin: 0;
+            padding: 10px 20px;
+            background: $secondary-color;
+            
+            h3 {
+                font-size: 1.2em;
+                margin: 0;
+            }
+            
+            p {
+                font-size: 0.9em;
+                margin: 1px 0;
+            }
+        }
+    }
+    
+}
+
+
+
+.project:not(:first-child),
+.project:not(:nth-child(2)) {
+    
+    
+    border-top: 2px solid #333;
+    margin-top: 50px;
+}
+
+.project:not(:nth-child(2n+1)) {
+    margin-left: 15px;
+}
+
+
+
+.project:not(:nth-child(2n)) {
+
+    margin-right: 30px;
+}
+
+.project:hover > figure figcaption {
+    background: rgba(yellow, 0.2);
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    
+      .project-container {
+        
+        padding: 0;
+        
+        .project {
+            width: 100%;
+            margin: 15px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    
+    .project:not(:nth-child(2n)) {
+
+    margin-right: 0;
+}
+}
+
+@media screen and (max-height: 400px) {
+    
+    .project-container .project figure {
+        height: 150px;
+    }
+    
+}
+
+

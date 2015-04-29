@@ -15,7 +15,7 @@ For doing this we can use notification bar, pop-ups, redirection and many more w
 which works best for this purpose. In this post I'm gonna show you how Jekyll 
 posts can be redirected to other links.
 
-We're going to [redirect](http://en.wikipedia.org/wiki/Meta_refresh) our post using <i>meta</i> tag with the attribute <i>http-equiv</i> which has <i>refresh</i> as its value. Here's how the code to be put under <i>head</i> looks.
+We're going to [redirect](http://en.wikipedia.org/wiki/Meta_refresh) our post using *meta* tag with the attribute *http-equiv* which has *refresh* as its value. Here's how the code to be put under *head* looks.
 
 
 <pre>
@@ -42,7 +42,7 @@ Replace that code above with the code below-
 </pre>
 
 The code is self explanatory. if redirection will be set true in YAML the meta tag will be included in the post and 
-page will redirect to the link set to <i>redirect-to</i>.
+page will redirect to the link set to *redirect-to*.
 
 The last step is to start using the feature we created by putting following code in posts' front matter-
 

@@ -1,0 +1,89 @@
+footer {
+    background: rgba(124, 142, 140, 0.99);
+    padding: 5px 0;
+}
+
+
+    
+    .foot-wrapper .foot p {
+        color: darken(white, 10%);
+        font-size: 1.1em;
+        text-align: center;
+        
+        a {
+            color: inherit;
+            text-decoration: underline;
+            
+            &:hover {
+                color: inherit;
+                border-bottom: none;
+                opacity: 1;
+            }
+        }
+    }
+
+
+@media screen and (max-width: 800px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    .site-header {
+        float: none;
+        height: 50px;
+        width: 100%;
+        top: 0;
+        @include gshadow;
+        
+        .title-logo {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .bars {
+            float: right;
+            width: 75px;
+            height: 100%;
+            line-height: 50px;
+            padding: 0;
+            
+            
+            .bar {
+                width: 60%;
+                height: 1px;
+                margin: 25px auto;
+                
+                &::before {
+                    top: -10px;
+                }
+                
+                &::after {
+                    top: 10px;
+                }
+            }
+            
+        }
+       
+    }
+    
+   
+    
+    .nav {
+        width: 100%;
+        top: 50px;
+    }
+    
+    .open-bar .bar {
+ background: white;
+        opacity: 0.7;
+}
+    .open-bar .bar::before,
+    .open-bar .bar::after {
+        transform: rotate(0);
+    }
+    
+    .no-scroll {
+        overflow: hiddden;
+    }
+}

@@ -5,37 +5,15 @@
 
   <body>
 
-  <div class="overlay"></div>
-  
-  {% include nav.html %}
-
-  {% include search.html %}
-
     {% include header.html %}
 
-    <div class="page-content">
+    <main class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
-      {% include disqus.html  %}
     </div>
 
-
     {% include footer.html %}
-
-
-    <script type="text/javascript">
-      SimpleJekyllSearch.init({
-        searchInput: document.getElementById('query'),
-        resultsContainer: document.getElementById('results'),
-        dataSource: '{{ site.baseurl }}/search.json',
-        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: '<h2>Sorry Buddy!</h2>',
-        limit: 10,
-        fuzzy: false,
-      })
-    </script>
-
 
   </body>
 

@@ -1,9 +1,11 @@
 ---
-layout: post
-title: PORTFOLIO
-permalink: /portfolio/
+layout: page
+title: Portfolio
+permalink: /projects/
 ---
 
-Here's the list of few projects I've worked on.. I'm currently looking forward to be working on more. Contact if you wanna make me a part of your project. [contact@abhisheksachan.in](http://jekyllrb.com/)
+{% include portfolio.html %}
 
- {% include portfolio.html %}
+Well that's my portfolio. Too small, Isn't it? Hmmm! tat's because I haven't yet worked for a client (but looking forward to work with). Be sure to check my [codepen](http://codepen.io/abhisack) profile too. That's my biiger portfolio than this.
+
+Want me to to work on your project? If you think I can help fire me an [mail](mailto:iamabhishekfromindia@gmail.com) or contact on [twitter](http://twitter.com/AbhishekSachan3).

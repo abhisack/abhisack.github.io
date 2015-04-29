@@ -18,6 +18,7 @@ I'm taking two theories here to explain how target element can be useful.
 
 2. <span class="highlight"> Traget is smart at awekening a sleeping element</span>
 
+
 These theories might have explained you a lot of what I'm trying to tell you. But you might question, how to target any element? It's simple. Give that element an unique ID and then call or aweken this ID through any anchor element.
 Suppose if we have a div with ID #nav having following CSS-
 
@@ -54,6 +55,7 @@ display: block;
 
 So what we did here? A div with ID #nav had opacity set to 0 and display set to none which means object was invisible. Later we targeted this element clicking the link located somewhere in the page and set new values to it's properties using :target element. To conclude, we faded in a hidden element.
 
+
 The same you could have done with following JS too-
 
 <pre>
@@ -69,6 +71,8 @@ But why to increase burden on your webpage until you can do the same with just p
 
 ###So What Are the Possibilities?
 There're many awesome things you can create using target element, especially show/hide things. Like-
+
+> Sara has published a very awesome article on how to make basic user interfaces using only CSS. Don't forget to chect it out on her blog
 
 ###Popup Blocks
 Yeah! you don't need to burden your webpages with jquery's animations and fadeIns/fadeOuts to pop up a block when user clicks any icon/button on your site. Stick to pure CSS for the same.

@@ -1,0 +1,56 @@
+.project-meta {
+    margin: 50px 0 30px;
+}
+.project-meta section {
+    text-align: left;
+    display: inline-block;
+    width: 33.33%;
+    margin: 0;
+    padding: 0 0 15px;
+    border-bottom: 1px solid  rgba(lighten(#333, 50%), 0.7);
+    p {
+        margin: 0;
+        padding: 0;
+        color: $main-color;
+        
+        a {
+            color: inherit;
+        }
+    }
+    
+    h4 {
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.project-meta section {
+     margin-left: -4px;
+}
+
+
+.project-img-full {
+    margin: 50px 0 0;
+    max-width: 100%;
+}
+
+.project-img-half {
+    float: right;
+    width: 50%;
+    margin: 0 0 30px 30px;
+    max-height: 100%;
+}
+@media screen and (max-width: 800px) {
+    .project-meta section {
+        width: 100%;
+        display: block;
+        margin: 30px 0 0 0;
+    }
+    
+    .project-img-half {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+}

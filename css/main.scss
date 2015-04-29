@@ -6,23 +6,13 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
+$text-color: lighten(#333, 10%);
+$main-width: 80%;
+$main-color: #299;
+$body: darken(white, 0%);
+$secondary-color: darken(white, 2%);
+$post-list-color: darken(white, 1%);
+$link-hover: #299;
 
 
 
@@ -39,18 +29,42 @@ $on-laptop:        800px;
     }
 }
 
+@mixin gborder($value) {
+    
+     border-image: repeating-linear-gradient(to right, #299 0, #299 33%, lighten(#299, 20%) 34%, lighten(#299, 20%) 65%, lighten(#299, 50%) 66%, lighten(#299, 50%) 100%) 0 0 7 0;
+        border-bottom-width: $value;
+}
+
+@mixin gshadow {
+    box-shadow: 0 1px darken(white, 10%), 0 2px darken(white, 10%), 0 3px darken(white, 10%);
+}
+
+@mixin gshadow2 {
+    box-shadow: 1px 0 darken(white, 10%), 2px 0 darken(white, 10%), 3px 0 darken(white, 10%);
+}
+
+.open-search-box {
+    opacity: 1;
+	visibility: visible;
+    -webkit-transform: scale(1);
+	
+}
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "prism",
+        "font/font",
         "404",
         "search",
-        "port",
-        "base",
-        "layout",
-        "syntax-highlighting",
-        "responsive",
-        "prism"
-
-
+        "paginate",
+        "portfolio",
+        "profile",
+        "project",
+        "home",
+         "header",
+         "base",
+         "layout",
+         "footer"
 ;

@@ -1,0 +1,135 @@
+.profile-container {
+    padding: 10px 0;
+    
+    figure {
+         position: relative;
+        display: inline-block;
+        
+        width: 150px;
+        width: 20vw;
+        
+        height: 150px;
+        height: 20vw;
+        
+        max-width: 300px;
+        min-width: 150px;
+        max-height: 300px;
+        min-height: 150px;
+        vertical-align: middle;
+        border-radius: 50%;
+        
+        img {
+            border-radius: inherit;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figcaption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(yellow, 0.1);
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+        }
+        
+    }
+    
+    .profile-content {
+        display: inline-block;
+        width: 45%;
+        vertical-align: middle;
+    }
+}
+
+.btn-container {
+    
+}
+
+.btn {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    color: white !important;
+    background: #333;
+    padding: 10px 0;
+    -webkit-transition: all .3s ease-out !important;
+    -moz-transition: all .3s ease-out !important;
+    -o-transition: all .3s ease-out !important;
+    -ms-transition: all .3s ease-out !important;
+    transition: all .3s ease-out !important;
+    
+    &:hover {
+        /***global link override***/
+        opacity: 1;
+        border-bottom: none;
+        box-shadow: inset 0 -100px lighten(#333, 10%);
+    }
+    
+    span {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profile-container {
+        figure {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .profile-content {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn-container {
+        text-align: center;
+        
+        .btn {
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+    
+    .profile-container figure {
+    
+          border-radius: 50%;
+          
+          img {
+              border-radius: inherit;
+          }
+          
+          figcaption {
+              border-radius: inherit;
+          }
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1080px) {
+    
+    
+      .profile-container figure {
+          min-width: 200px;
+          min-height: 200px;
+          border-radius: 50%;
+          
+          img {
+              border-radius: inherit;
+          }
+          
+          figcaption {
+              border-radius: inherit;
+          }
+      }
+    
+    .profile-container .btn-container {
+        text-align: center;
+    }
+}
+

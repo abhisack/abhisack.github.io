@@ -1,266 +1,100 @@
-/**
- * Reset some basic elements
- */
-
- * {
- overflow-x: hidden;
- }
-
-
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
 
 
 
-/**
- * Basic styling
- */
+
+html,
 body {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    color: $text-color;
-    background-color: $background-color;
+ min-height: 100%;
+    min-height: 100vh;
 }
-s
+body {
+    font-size: 16px;
+    font-family: 'Lustria', sans-serif, halvetica, arial;
+    font-weight: 400;
+    margin: 0;
+    color: $text-color;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
 
 ::selection {
-    background-color: #e7efe7;
-    }
-
-   
-
-    @font-face {
-
-  font-family: 'FontAwesome';
-  src: url('/css/fonts/fontawesome-webfont.ttf?v=4.0.3');
-
+    background: lighten(#299, 50%) !important;
 }
 
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxh_xHqYgAV9Bl_ZQbYUxnQU.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxn5HxGBcBvicCpTp6spHfNo.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxjqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, hr,
+dl, dd, ol, ul, figure {
+    margin-bottom: 1.6;
+    line-height: 1.6;
 }
 
-
-/**
- * Set `margin-bottom` to maintain vertycal rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+#disqus_thread {
+    margin: 50px 0 0;
 }
 
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.4em;
 }
 
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
+p {
+    font-size: 1.1em;
 }
 
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-}
-
-
-
-/**
- * Links
- */
 a {
-    color: $brand-color;
     text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover:not(.site-title) {
-
-        color: $text-color;
-        color: tomato;
-        text-decoration: underline;
-    }
 }
 
+.project-meta a,
+.post-content a {
+    color: $main-color;
+    text-decoration: none;
+    transition: opacity .3s ease-in;
+}
 
+.project-meta a:not(.btn):hover,
+.post-content a:not(.btn):hover {
+        color: $link-hover;
+        border-bottom: 1px solid $main-color;
+        opacity: 0.7;
+    
+}
 
-/**
- * Blockquotes
- */
+em {
+    padding: 2px;
+    background: darken(white, 10%);
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
+    display: inline-block;
+    float: left;
+    width: 45%;
+    font-size: 1.2em;
+    border-top: 5px solid #299;
+    border-bottom: 5px solid #299;
+    padding: 0 20px;
+    margin: 30px 30px 30px 0;
 }
-
-
-
-/**
- * Code formatting
- */
-
-
-code {
-    padding: 1px 5px;
-}
-
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+    margin: 50px 0 !important;
+    border-left: 5px solid white;
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+@media screen and (max-width: 800px) {
+    blockquote {
+        float: none;
+        width: 100%;
+        margin: 0;
     }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
+    
+    .no-scroll {
+        overflow: hidden;
     }
 }

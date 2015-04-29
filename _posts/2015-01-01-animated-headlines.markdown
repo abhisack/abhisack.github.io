@@ -5,6 +5,7 @@ date: 2015-01-01 17:39:55
 tags: codepen
 description: "This year, on its very first day, I was coding something awesome awesome on codepen. Thought should blog about this awesome background-clip property."
 comments: true
+codepen: true
 ---
 
 New background-clip property is awesome. I set background to the text, use background-clip property and animate it's background image by setting background-position randomly in the keyframes. Here's a look on codepen with some extra new year bang.

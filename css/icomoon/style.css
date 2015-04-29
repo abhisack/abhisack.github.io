@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-n5o6kp');
-	src:url('fonts/icomoon.eot?#iefix-n5o6kp') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-n5o6kp') format('woff'),
-		url('fonts/icomoon.ttf?-n5o6kp') format('truetype'),
-		url('fonts/icomoon.svg?-n5o6kp#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-9980hw');
+	src:url('fonts/icomoon.eot?#iefix-9980hw') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-9980hw') format('woff'),
+		url('fonts/icomoon.ttf?-9980hw') format('truetype'),
+		url('fonts/icomoon.svg?-9980hw#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,23 +23,31 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-menu:before {
-	content: "\e9bd";
+.icon-close:before {
+	content: "\e606";
 }
 
-.icon-twitter:before {
-	content: "\ea91";
+.icon-info:before {
+	content: "\e600";
 }
 
-.icon-github:before {
-	content: "\eab1";
+.icon-search:before {
+	content: "\e605";
 }
 
 .icon-stackoverflow:before {
-	content: "\eacf";
+	content: "\e601";
 }
 
 .icon-codepen:before {
-	content: "\eae4";
+	content: "\e602";
+}
+
+.icon-github:before {
+	content: "\e603";
+}
+
+.icon-twitter:before {
+	content: "\e604";
 }
 

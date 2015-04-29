@@ -1,0 +1,20 @@
+.pagination {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    .pagination-item {
+        display: inline-block;
+        margin-top: 20px;
+        
+        a {
+            padding: 10px 25px;
+            color: white;
+            background: rgba(124, 142, 140, 0.99);
+            
+            &:hover {
+                background: #3dedd4;
+            }
+        }
+    }
+}

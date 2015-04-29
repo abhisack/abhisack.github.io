@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header project-page">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <article class="post-content">
+      <p>{{ page.project-about }}</p>
+      <div class="project-meta">
+          <!-- Date -->
+          <section>
+              <h4>Date</h4>
+              <p>{{ page.project-date }}</p>
+          </section>
+          
+          <!-- Role -->
+          <section>
+                <h4>Role</h4>
+              <p>{{ page.project-role }}</p>
+          </section>
+          
+          <!-- URL -->
+          <section>
+                <h4>URL</h4>
+              <p><a href="{{ page.project-url }}">{{ page.project-title }}</a></p>
+          </section>
+          
+          {% if page.project-img-full %}
+          <img class="project-img-full" src="{{ page.project-img-full }}" alt="{{ page.project-img-alt }}">
+          {% endif %}
+      </div>
+      
+      {% if page.project-img-half %}
+      <img class="project-img-half" src="{{ page.project-img-half }}" alt="{{ page.project-img-alt }}">
+      {% endif %}
+      
+    {{ content }}
+  </article>
+
+</div>

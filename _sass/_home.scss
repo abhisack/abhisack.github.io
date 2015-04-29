@@ -1,0 +1,63 @@
+.about-home {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: margin .3s ease-out, opacity .4s ease-out;
+    -moz-transition: margin .3s ease-out, opacity .4s ease-out;
+    -ms-transition: margin .3s ease-out, opacity .4s ease-out;
+    -o-transition: margin .3s ease-out, opacity .4s ease-out;
+     transition: margin .3s ease-out, opacity .4s ease-out;
+    
+    .profile-container figure {
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 50%;
+        
+        img {
+            border-radius: 50%;
+        }
+        
+        figcaption {
+            border-radius: 50%;
+        }
+    }
+    
+    .profile-content p {
+        font-size: 1em;
+    }
+
+}
+
+.open-about-home {
+    opacity: 1;
+    height: auto;
+    margin: 50px 0;
+}
+
+.portfolio-home {
+    margin: 100px 0 0;
+}
+
+.page-heading {
+    width: 100px;
+    font-size: 18px;
+    margin: 30px 0 0 0;
+    border-bottom: 2px solid #333;
+    @include gborder(2px);
+}
+
+#blog {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .portfolio-home {
+    margin: 50px 0 0;
+}
+
+
+#blog {
+    margin-top: 50px;
+}
+    
+}
