@@ -2,6 +2,7 @@
 layout: post
 title:  "Because You Ain't Them"
 date: 2015-02-06 03:55:35
+permalink: "blog/because-you-are-not-them"
 tags: CSS
 description: "Because it's about your interests it's about the time too but the most important thing is that it's about your soul."
 comments: false

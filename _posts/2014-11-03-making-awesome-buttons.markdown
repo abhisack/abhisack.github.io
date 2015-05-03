@@ -3,6 +3,7 @@ layout: post
 title:  "Making Awesome Show/Hide Follow Buttons"
 date: 2014-11-03 17:39:55
 tags: experiment
+permalink: "blog/making-awesome-show-hide-follow-buttons"
 description: "Have you ever wondered seeing the plugins like Addthis on Wordpress that how they really work. Well, today I'm going to share with you a simple plugin powered by jQuery & css which you of course will love to use on your site"
 comments: true
 ---
@@ -26,11 +27,26 @@ Have you ever wondered seeing the plugins like Addthis on Wordpress that how the
 &lt;div class="social-plugin">
 
            &lt;div class="social-icons" id="demo">
-                  &lt;a href=" #YOUR FACEBOOK URL" target="_parent">&lt;i id="twitter"  class="fa fa-twitter fa-2x ">&lt;/i>&lt;/a>
-                 &lt;a href="#YOUR GOOGLE PLUS URL">&lt;i id="g"  class="fa fa-google-plus fa-2x ">&lt;/i>&lt;/a>
-                 &lt;a href="#YOUR DRIBBLE PLUS URL">&lt;i id="dribble" class="fa fa-dribbble fa-2x ">&lt;/i>&lt;/a>
-                 &lt;a href="#YOUR PINTEREST PLUS URL">&lt;i id="pin" class="fa fa-pinterest fa-2x ">&lt;/i>&lt;/a>
-                 &lt;a href="mailto:you@domain.com">&lt;i id="en"  class="fa fa-envelope fa-2x ">&lt;/i>&lt;/a>
+                  &lt;a href=" #YOUR FACEBOOK URL" target="_parent">
+                  &lt;i id="twitter"  class="fa fa-twitter fa-2x ">
+                  &lt;/i>
+                  &lt;/a>
+                 &lt;a href="#YOUR GOOGLE PLUS URL">
+                 &lt;i id="g"  class="fa fa-google-plus fa-2x ">
+                 &lt;/i>
+                 &lt;/a>
+                 &lt;a href="#YOUR DRIBBLE PLUS URL">
+                 &lt;i id="dribble" class="fa fa-dribbble fa-2x ">
+                 &lt;/i>
+                 &lt;/a>
+                 &lt;a href="#YOUR PINTEREST PLUS URL">
+                 &lt;i id="pin" class="fa fa-pinterest fa-2x ">
+                 &lt;/i>
+                 &lt;/a>
+                 &lt;a href="mailto:you@domain.com">
+                 &lt;i id="en"  class="fa fa-envelope fa-2x ">
+                 &lt;/i>
+                 &lt;/a>
                  &lt;img id="hide-btn" src="IMG/hide2.png"/>
              &lt;/div>
 

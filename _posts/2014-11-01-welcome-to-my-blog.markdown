@@ -2,6 +2,7 @@
 layout: post
 title:  "Hello World Welcome to my Blog"
 date:   2014-11-01 17:39:55
+permalink: "welcome"
 description: "Hello World! Welcome to my blog. This is my personal blog where I'll be sharing my front-end stuff,, tutorials and my life as well. Stay tuned for more."
 ---
 

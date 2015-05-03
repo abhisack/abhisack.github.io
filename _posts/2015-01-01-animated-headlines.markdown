@@ -3,6 +3,7 @@ layout: post
 title:  "Animated Headlines with background-clip"
 date: 2015-01-01 17:39:55
 tags: codepen
+permalink: "blog/animated-headlines-with-background-clip"
 description: "This year, on its very first day, I was coding something awesome awesome on codepen. Thought should blog about this awesome background-clip property."
 comments: true
 codepen: true

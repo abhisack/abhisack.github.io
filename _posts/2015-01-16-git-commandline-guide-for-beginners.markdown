@@ -3,6 +3,7 @@ layout: post
 title:  "GIT Commandline Guide for Beginners"
 date: 2015-01-16 17:39:55
 tags: GIT
+permalink: "blog/git-commandline-guide-for-beginners"
 description: "A short list of useful git commands to help the beginners get started with GIT and Github."
 comments: true
 ---
