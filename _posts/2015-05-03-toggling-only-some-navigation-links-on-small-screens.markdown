@@ -4,7 +4,7 @@ title:  "Toggling Only Some Navigation Links on Small Screens"
 date: 2015-05-03 03:55:35
 permalink: "blog/toggling-only-some-nav-links"
 tags: CSS
-description: "using nth-child selectors to hide less important links on smallscreens but toggle the most important ones."
+description: "using nth-child selectors to hide less important nav links on smallscreens but toggle the most important ones."
 featured-image: "https://camo.githubusercontent.com/820c4eeae7e0e934ea25d23e8e72f2b1f43b4088/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f31323733322f313536363638352f31353761353632652d353039332d313165332d383939392d3037326262633231636334352e706e67"
 comments: true
 codepen: true
