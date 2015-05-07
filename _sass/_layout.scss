@@ -14,7 +14,7 @@ width: $main-width;
 }
 
 .site-title {
-    
+    text-transform: uppercase;
     width: 40%;
     color: mix(#299,#333);
     border-top: 2px solid lighten(#333, 20%);
@@ -72,7 +72,7 @@ width: $main-width;
      }
      
      p {
-         font-size: 0.9em;
+         font-size: 1em;
      }
      
      .icon {
