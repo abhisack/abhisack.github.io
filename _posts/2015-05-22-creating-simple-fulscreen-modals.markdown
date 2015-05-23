@@ -10,7 +10,7 @@ comments: true
 codepen: false
 ---
 
-You often have some content on your site that you don't want to show the user by default but show it when he demands it. Fullscreen modals is a very good idea to store such sub-content (like some message, hint or faq) that can't be fit into a tooltip. There're many articles out there teaching you to create modals (that fixed width thingy!). [Sara Soueidan](https://twitter.com/SaraSoueidan) has got good [article](tympanus.net/codrops/2013/11/07/css-overlay-techniques/) on it. I recommend you reading that article first if you're new to modal UI.
+You often have some content on your site that you don't want to show the user by default but show it when he demands it. Fullscreen modals is a very good idea to store such sub-content (like some message, hint or faq) that can't be fit into a tooltip. There're many articles out there teaching you to create modals (that fixed position thingy!). [Sara Soueidan](https://twitter.com/SaraSoueidan) has got good [article](tympanus.net/codrops/2013/11/07/css-overlay-techniques/) on it. I recommend you reading that article first if you're new to modal UI.
 
 If you've been into front-end development world for some time, you'd probably be familiar with techniques used for creating modals. Let's have a look at how we create a basic modal-
 
@@ -106,7 +106,7 @@ modal.classList.remove("modal-is-opened");
  
  Well, we could pretty easily create our modal. As of the code above, When a button having *btn-open* class is clicked in our document, our modal opens. But hey,
  It doesn't solve our problem at all when we've more than one button to open the modals of same pattern but with different content. So are we going to use mutiple markups for multiple modals? Are we going to let only a single button having a *btn-open* class open the modal? Are we going to write multiple event handlers for different elements that are supposed to open a modal? Of course not! Who has got all that time when things could be done in much shorter code?
- Well, this is where `DOM Element Creation` `(document.createElement("element-name"))`, `Event Deligations` and `data-attributes` come into play.
+ Well, this is where `DOM Element Creation` `(document.createElement("element-name"))`, `Event Deligations` and [data-attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes) come into play.
 
  Just imagine how lazy you'd feel to handle the three things together. First putting modal into your pages , then styling it and then using JS to call events to open it. Isn't that a long process. What if we could handle HTML part using JS? Well, it looks like we can. Javascript provides a way to create elements and append them (kinda push em) to any element. Here's how it goes for the markup we dealt with above-
 
