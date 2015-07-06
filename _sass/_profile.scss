@@ -74,6 +74,38 @@
     }
 }
 
+
+.btn-material {
+        position: relative; /*** for after ***/
+        overflow: hidden; /*** for after pseudo element ***/
+}
+/***Material effect on click ***/
+.btn-material::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 20px;
+  height: 20px;
+  background: rgba(#299, 0.1);
+  transition: all .05s ease-out;
+  transform: translate(-50%, 100%);
+  border-radius: 50%;
+    z-index: 5;
+}
+
+.btn-material:active::after,
+.btn-material:focus::after{
+	transform: translate(0);
+  left: 0;
+  top: 0;
+	width: 100%;
+	height: 100%;
+  border-radius: 0;
+  background: rgba(#299, 0.2);
+  transform: translateY(0%);
+}
+
 @media screen and (max-width: 800px) {
     .profile-container {
         figure {
