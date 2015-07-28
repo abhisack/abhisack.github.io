@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "More committed to doing things"
+title:  "More Committed To Doing Things"
 date: 2015-07-28 11:39:50
 permalink: "blog/more-committed"
 tags: CSS
