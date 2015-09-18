@@ -22,6 +22,22 @@ body {
     background: lighten(#299, 50%) !important;
 }
 
+::-webkit-selection {
+    background: lighten(#299, 50%) !important;
+}
+
+.btn::selection {
+    background: none;
+}
+
+.btn::-webkit-selection {
+    background: none;
+}
+
+.btn::-moz-selection {
+    background: none;
+}
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, hr,
 dl, dd, ol, ul, figure {
