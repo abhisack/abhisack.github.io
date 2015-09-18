@@ -5,7 +5,7 @@
     float: left;
   width: 10%;
   height: 100vh;
-  background: repeating-linear-gradient(45deg, #3dedd4 0, #3dedd4 50%, rgba(124, 142, 140, 0.99) 0,  rgba(124, 142, 140, 0.99) 100%);
+  background: repeating-linear-gradient(45deg, #3dedd4, #3dedd4 50%, rgba(124, 142, 140, 0.99) 50%,  rgba(124, 142, 140, 0.99) 100%);
     z-index: 16;  /***above search box***/
     @include gshadow2;
 }
@@ -24,12 +24,12 @@
   width: 80px;
   text-align: center;
   height: 80px;
-  line-height: 80px;
+  line-height: 70px;
   border: 5px solid white;
   border-radius: 50%;
   color: white;
     background: #299;
-    
+
     &:hover {
         color: white;
     }
@@ -184,4 +184,10 @@
      }
     
 
+}
+
+@media screen and (min-width: 800px) and (max-width: 1080px) {
+    .bars {
+        padding: 2px;
+    }
 }

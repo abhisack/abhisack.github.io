@@ -17,11 +17,13 @@
         min-height: 150px;
         vertical-align: middle;
         border-radius: 50%;
+        overflow: hidden;
         
         img {
-            border-radius: inherit;
+            border-radius: none;
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
         
         figcaption {
@@ -161,6 +163,11 @@
           }
       }
     
+    
+    .profile-container  .profile-content {
+        text-align: center;
+    }
+
     .profile-container .btn-container {
         text-align: center;
     }
