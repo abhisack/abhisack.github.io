@@ -69,13 +69,7 @@ box-sizing: border-box;
 	font-style: italic;
 }
 
-
-
-
-
-
 .close-search {
-    display: block;
 	float: right;
 	margin: 0;
 	text-decoration: none !important;
@@ -85,13 +79,9 @@ box-sizing: border-box;
 }
 
 .close-search:hover {
-	background: #299;
+	background: tomato;
+    color: white;
 }
-
-
-
-
-
 
 #results {
 	width: 50%;
@@ -127,10 +117,13 @@ box-sizing: border-box;
 	margin-bottom: 50%;
 }
 
-
-
-#results li a:hover {
+#results li a:hover,
+#results li a:focus {
 	color: #299;
+}
+
+#results li a:active {
+    opacity: 0.9;
 }
 
 
@@ -187,11 +180,21 @@ width: 95%;
 
     
     .close-search {
-        color: #333 !important;
+        color: #333;
         background: transparent;
         position: absolute;
         top: 20px;
-        right: 10px;
+        right: 50%;
+        margin-right: -15px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: 900;
+        padding: 0;
+        background: tomato;
+        text-align: center;
+        border-radius: 50%;
+        
     }
 
 
