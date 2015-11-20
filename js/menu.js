@@ -10,18 +10,20 @@ var close_search= document.querySelector(".close-search");
 
 //Navigation
 
-bar.addEventListener("click", function() {
-  nav.classList.toggle("open-nav");
-  bar.classList.toggle("open-bar");
-    document.body.classList.toggle("no-scroll");
-});
+bar.addEventListener("click", toggleMenu, false);
 
-bar.addEventListener("kyeup", function() {
-  nav.classList.toggle("open-nav");
-  bar.classList.toggle("open-bar");
-    document.body.classList.toggle("no-scroll");
-});
+function toggleMenu() {
+ nav.classList.toggle("open-nav");
+ bar.classList.toggle("open-bar");
+ document.body.classList.toggle("no-scroll");
+}
 
+//key support
+window.addEventListener("keydown", function(e) {
+    if(e.keyCode===36) {
+      toggleMenu();
+    }
+});
 
 //Search box 
 
@@ -51,5 +53,19 @@ SimpleJekyllSearch.init({
 });
 
 
+//show notification for the desktop users
+
+if(window.innerWidth > 1080) {
+    function setNotAccess() {
+        localStorage.setItem("status", "true");
+    }
+    if(!localStorage.getItem("status")) {
+    var menuNotification= new Notification("Pro Tip!", {tag: "Tip", body: "you can open & close navigation menu using 'HOME' key"});
+        setNotAccess();
+    } else {
+        //notification for returning user 
+        }
+    
+}
 
 
