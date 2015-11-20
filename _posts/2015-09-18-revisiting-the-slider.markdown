@@ -3,7 +3,7 @@ layout: post
 title:  "Revisiting the Slider"
 date: 2015-09-18 1:38:00
 permalink: "blog/revisiting-the-slider"
-tags: CSS, Javascript
+tags: Flexbox, JS
 description: "Creating a responsive, minimal and accessible slider."
 featured-image: none
 comments: true
