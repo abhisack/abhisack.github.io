@@ -74,6 +74,10 @@ width: $main-width;
          &:hover {
              color: $link-hover;
          }
+         
+         &:focus {
+             color: $link-hover;
+         }
      }
      
      p {
