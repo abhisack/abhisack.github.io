@@ -16,7 +16,7 @@ right: 0;
 top: 0;
 width: 90%;
 height: 100%;
-background-color: darken(white, 2%);
+background-color: rgba(255, 255, 255, 0.95);
 background-size: 5px 5px;
 z-index: 15;
 overflow: hidden;
@@ -49,16 +49,16 @@ overflow: hidden;
 width: 100%;
 height: 100px;
 outline: none;
-background-color: white;
+background-color: darken(white, 3%);
 font-size: 2em;
 color: lighten(#333, 15%);
 border: 7px lighten(#333, 1%);
-    padding: 0 10px;
+padding: 0 10px;
 box-sizing: border-box;
 -moz-box-sizing: border-box;
 	
 	&:focus {
-	background-color: #e7efe7;
+	background-color: darken(white, 7%);
 	border-color: #299;
 	}
 }
