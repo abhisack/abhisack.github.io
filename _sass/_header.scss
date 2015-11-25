@@ -202,7 +202,7 @@
     }
     .nav nav li a::after {
         width: 0;
-        background: #299;
+        background: $link-hover;
         transition: all .3s ease-out;
     }
     .nav nav li a:hover::after,
