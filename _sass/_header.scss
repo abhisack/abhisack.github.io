@@ -95,7 +95,7 @@
   right: 0;
   width: 90%;
   height: 80%;
-  background: rgba(91, 95, 94, 0.8);
+  background: rgba(255, 255, 255, 0.95);
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
          -o-transform: translateY(-100%);
@@ -111,7 +111,6 @@
   z-index: 5;
 }
 
-
 .nav nav {
      /***firefox bug fix***/
 }
@@ -120,15 +119,24 @@
 }
 
 .nav nav li a {
+    position: relative;
 	display: inline-block;
   text-decoration: none;
-  color: white;
-  padding:  20px;
- margin: 15px 0;
-  background: #3dedd4;
+  color: #333;
+  font-size: 3em;
+  font-weight: 900;
+  padding:  .1em 0;
+ margin: 0em 0;
 }
 
+.nav nav li a:hover,
+.nav nav li a:focus {
+    opacity: 0.7;
+}
 
+.nav nav li a:active {
+    opacity: 0.4;
+}
 
 .open-nav {
 	height: 100%;
@@ -138,6 +146,15 @@
              transform: translateY(0);
 }
 
+.open-nav .nav {
+    animation: moveDown .3s ease-out .3s;
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-100%);
+    }
+}
 
 @media screen and (max-width: 800px) {
     
@@ -152,8 +169,7 @@
           text-align: center;
           
           li {
-              display: inline-block;
-              margin-left: 15px;
+              margin: .2em 0;
           }
           
           li:not(:first-child) {
@@ -167,5 +183,30 @@
 @media screen and (min-width: 800px) and (max-width: 1080px) {
     .bars {
         padding: 2px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .nav nav li a::after,
+    .nav nav li a::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: .1em;
+    }
+    
+    .nav nav li a::before {
+        width: 100%;
+        background: #333;
+    }
+    .nav nav li a::after {
+        width: 0;
+        background: #299;
+        transition: all .3s ease-out;
+    }
+    .nav nav li a:hover::after,
+    .nav nav li a:focus::after {
+        width: 100%;
     }
 }
