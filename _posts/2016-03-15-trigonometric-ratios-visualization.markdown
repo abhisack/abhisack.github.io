@@ -9,7 +9,7 @@ featured-image: none
 comments: false
 codepen: true
 redirection: true
-redirect-to: codepen.io/abhisack/pen/KzgKwo
+redirect-to: http://codepen.io/abhisack/pen/KzgKwo
 ---
 
 You're being redirected to [{{page.redirect-to}}]({{page.redirect-to}})
