@@ -1,4 +1,4 @@
-body {
+bbody {
   background-color: #F5F5F5;
   color: #555;
   font-size: 1.1em;
@@ -10,9 +10,10 @@ ul,
 li {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-h1,h2,h3,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
@@ -27,4 +28,10 @@ a {
 html,
 body {
   height: 100%;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
 }
