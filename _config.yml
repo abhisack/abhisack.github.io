@@ -4,7 +4,7 @@ subtitle: "Front-end Geek"
 email: iamabhishekfromindia@gmail.com
 description: "Abhishek Sachan is a front-end Web Developer, gamer from India."
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://abhisheksachan.in" # the base hostname & protocol for your site
+url: "https://abhisheksachan.in" # the base hostname & protocol for your site
 twitter_username: AbhishekSachan3
 github_username:  abhisack
 
@@ -13,3 +13,6 @@ paginate_path: "/blog/page:num/"
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-feed
